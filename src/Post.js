@@ -17,16 +17,17 @@ export default function Post(props) {
                </div>
             </div>
             <div className="image-post">
-               <ion-icon name="heart-sharp" class={doubleClickLiked}></ion-icon>
+               {/* <ion-icon name="heart-sharp" class={doubleClickLiked}></ion-icon> */}
                <img
                   data-test="post-image"
                   src={props.post}
                   alt=""
                   onDoubleClick={() => {
-                     if (liked === 'heart-outline') setLiked('heart')
-                     setDoubleClickLiked('liked-post like')
-                     if (doubleClickLiked === 'liked-post like') setCountLikes(countLikes)
-                     else setCountLikes(countLikes + 1)
+                     if (liked === 'heart-outline' && setDoubleClickLiked !== 'liked-post like') {
+                        setLiked('heart')
+                        setDoubleClickLiked('liked-post like')
+                        setCountLikes(countLikes + 1)
+                     }
                   }}
                />
             </div>
@@ -64,7 +65,10 @@ export default function Post(props) {
                <img src={props.imageWhoLiked} alt="" />
                <p>
                   Curtido por <span id="bold">{props.userWhoLiked}</span> e
-                  <span id="bold"> outras <span data-test="likes-number">{countLikes}</span> pessoas</span>
+                  <span id="bold">
+                     {' '}
+                     outras <span data-test="likes-number">{countLikes}</span> pessoas
+                  </span>
                </p>
             </div>
 

@@ -124,10 +124,9 @@ ion-icon:hover:not(.logo-and-direct ion-icon:hover, .comentary ion-icon:hover) {
 }
 
 #profile span {
-  display: block; 
-  margin-bottom: 0.5rem;
+   display: block;
+   margin-bottom: 0.5rem;
 }
-
 
 .profile-img {
    width: 6.6rem;
@@ -327,11 +326,12 @@ button:hover {
    background-color: #0095f6;
 }
 
-ion-icon[name="heart"] {
+ion-icon[name='heart'] {
    color: red;
+   outline: red;
 }
 
-.liked-post {
+/* .liked-post {
    height: 20rem;
    width: 20rem;
    position: absolute;
@@ -343,33 +343,29 @@ ion-icon[name="heart"] {
 }
 
 .liked-post.like {
-   animation: 1s like-heart-animation ease-in forwards;
+   animation: 0.3s like-heart-animation ease-in forwards;
    z-index: 500;
 }
 
 @keyframes like-heart-animation {
    0%,
    to {
-     opacity: 0;
-     -webkit-transform: scale(0);
-     transform: scale(0);
+      opacity: 0;
+      transform: scale(0);
    }
    15% {
-     opacity: 0.9;
-     -webkit-transform: scale(1.2);
-     transform: scale(1.2);
+      opacity: 1;
+      transform: scale(1.2);
    }
    30% {
-     -webkit-transform: scale(0.95);
-     transform: scale(0.95);
+      transform: scale(0.95);
    }
    45%,
    80% {
-     opacity: 0.9;
-     -webkit-transform: scale(1);
-     transform: scale(1);
+      opacity: 1;
+      transform: scale(1);
    }
- }
+} */
 
 .footer-navigation {
    width: 100%;
@@ -499,7 +495,8 @@ ion-icon[name="heart"] {
       display: flex;
    }
 
-   main, .top {
+   main,
+   .top {
       width: 61.4rem;
    }
 
@@ -548,8 +545,8 @@ ion-icon[name="heart"] {
    }
 
    .sidebar-perfil #bold {
-    display: block; 
-    margin-bottom: 0.5rem;
+      display: block;
+      margin-bottom: 0.5rem;
    }
 
    .sidebar-body {
@@ -589,8 +586,8 @@ ion-icon[name="heart"] {
    }
 
    #new-user {
-    font-size: 1.2rem; 
-    color: #8e8e8e;
+      font-size: 1.2rem;
+      color: #8e8e8e;
    }
 
    .footer-sidebar {
