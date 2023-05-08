@@ -75,3 +75,10 @@ export const arrDePosts = [
   }
 ]
 
+export const arrDeSugestoes = [
+   {username: 'maykbrito', imageProfile: './assets/img/perfil-suggestion.jpg'},
+   {username: 'andre_pilli', imageProfile: './assets/img/perfil-suggestion2.jpg'},
+   {username: 'imateus.silva', imageProfile: './assets/img/perfil-suggestion3.jpg'},
+   {username: 'birobirobiro', imageProfile: './assets/img/perfil-suggestion4.jpg'},
+   {username: 'lucasmontano', imageProfile: './assets/img/perfil-suggestion5.jpg'},
+ ]
